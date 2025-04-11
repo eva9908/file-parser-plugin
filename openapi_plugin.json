@@ -1,0 +1,15 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "File Parser Plugin",
+    "name_for_model": "file_parser_plugin",
+    "description_for_human": "This plugin helps extract structured and unstructured content from various file formats.",
+    "description_for_model": "Extracts content from files like PDFs, Word documents, and more to help LLMs recognize intent.",
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:10000/openapi.json",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://path/to/your/logo.png",
+    "contact_email": "your-email@example.com",
+    "legal_info_url": "https://your-legal-info-link.com"
+}
