@@ -1,7 +1,13 @@
 # main.py
 from fastapi import FastAPI
-from file_parser.router import router  # 你自己写的 router
 
 app = FastAPI()
 
-app.include_router(router)
+# 直接在 main.py 中定义路由
+@app.get("/items")
+def get_items():
+    return {"message": "This is the /items endpoint!"}
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the File Parser API!"}
